@@ -8,7 +8,7 @@ import biblioteka.Knjiga;
 public interface BibliotekaInterface {
 
 	public void dodajKnjigu(Knjiga knjiga);
-	public void obrisiKnjigu(Knjiga knjiga);
+	public void obrisiKnjigu(Knjiga knjiga) throws IllegalAccessException;
 	public List<Knjiga> vratiSveKnjige();
 	public List<Knjiga> pronadjiKnjigu(Autor autor, long isbn, String naslov, String izdavac);
 	
